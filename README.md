@@ -1,5 +1,7 @@
 # Some Network Powershell commands
 
+## Test-NetConnection
+
 ```powershell
 Test-NetConnection -ComputerName Server001 -Port 443
 
@@ -23,3 +25,15 @@ Use ```Test-NetConnection | fl *``` to display more information (DNS results, re
 
 ![image](https://github.com/SammyKrosoft/How-To---PowerShell-Network-Commands/assets/33433229/67508d5c-f151-44b4-be2e-2d64eee7a8bc)
 
+## Using System.Net.Sockets.TcpClient
+
+```powershell
+$ipaddress = IP_Address_Server 
+$port = port 
+$connection = New-Object System.Net.Sockets.TcpClient($ipaddress, $port)
+if ($connection.Connected) {
+     Write-Host "Success" 
+} else { 
+     Write-Host "Failed" 
+}
+```
