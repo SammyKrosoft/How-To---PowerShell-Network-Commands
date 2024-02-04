@@ -19,7 +19,7 @@ Without parameters, the command will check if the computer is connected to Inter
 
 Use ```Test-NetConnection | fl *``` to display more information (DNS results, remote port, route, etc...)
 
-> NOTE: There is a ```-InformationLevel Detailed``` parameter, there is a difference in the output if used without ```| format-list *``` but I didn't see any differences when using the *Format-List* parameter :shrug:
+> NOTE: There is a ```-InformationLevel Detailed``` parameter, there is a difference in the output if used without ```| format-list *``` but I didn't see any differences when using the *Format-List-wildcard* parameter :shrug:
 
 ![image](https://github.com/SammyKrosoft/How-To---PowerShell-Network-Commands/assets/33433229/67508d5c-f151-44b4-be2e-2d64eee7a8bc)
 
