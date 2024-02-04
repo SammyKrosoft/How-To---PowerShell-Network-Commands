@@ -25,6 +25,8 @@ Use ```Test-NetConnection | fl *``` to display more information (DNS results, re
 
 ![image](https://github.com/SammyKrosoft/How-To---PowerShell-Network-Commands/assets/33433229/67508d5c-f151-44b4-be2e-2d64eee7a8bc)
 
+In the above example, the server does not respond to the "ping" on port 443 (```PingSucceeded = False```), but we can see that ```TcpTestSucceeded``` equals to ```True```. Not only the machine  is listening on that port, but the Outbound port is opened from my workstation.
+
 ## Using System.Net.Sockets.TcpClient
 
 ```powershell
